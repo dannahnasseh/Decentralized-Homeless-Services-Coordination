@@ -2,10 +2,6 @@
 ;; DECENTRALIZED HOMELESS SERVICES COORDINATION PLATFORM
 ;; =============================================================================
 
-;; =============================================================================
-;; CONSTANTS AND ERROR CODES
-;; =============================================================================
-
 ;; Error codes
 (define-constant ERR-UNAUTHORIZED (err u100))
 (define-constant ERR-NOT-FOUND (err u101))
@@ -784,9 +780,6 @@
   )
 )
 
-;; =============================================================================
-;; INITIALIZATION
-;; =============================================================================
 
 ;; Initialize privacy salt on deployment
 (var-set privacy-salt (sha256 stacks-block-height))
